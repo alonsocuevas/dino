@@ -28,6 +28,15 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// 👇 Esta línea nueva permite tocar en móviles
+document.addEventListener('touchstart', () => {
+  if (!gameOver) {
+    jump();
+  } else {
+    resetGame();
+  }
+});
+
 // Create obstacles at intervals
 function createObstacle() {
   if (gameOver) return;
