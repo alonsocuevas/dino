@@ -42,3 +42,28 @@ body {
   margin-top: 10px;
   color: white;
 }
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 100px;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+.github-btn i {
+    font-size: 40px;
+}
+
+.github-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    color: black;
+}
+
+.github-btn:active {
+    transform: scale(0.98);
+}
